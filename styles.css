@@ -299,3 +299,21 @@ a.thumb:hover img { transform: scale(1.035); }
   .bar, .toast, .actions, .marquee, .hero-rule { display: none; }
   .hero { height: auto; min-height: 0; }
 }
+
+/* download links */
+a.btn-line { display: inline-block; text-decoration: none; }
+.hero-cv { font-weight: 600; text-decoration: underline !important; text-decoration-color: var(--pink) !important; text-decoration-thickness: 1.5px !important; text-underline-offset: .2em; }
+.bar .bar-cv { color: var(--ink); font-weight: 600; }
+.contact-cv { margin: 1.75rem 0 0; }
+.btn-solid {
+  display: inline-block; text-decoration: none;
+  background: var(--ink); color: var(--cream);
+  font: 500 1rem/1 var(--display); padding: .95rem 1.4rem; border-radius: 999px;
+  transition: background .2s, transform .2s;
+}
+.btn-solid:hover { background: var(--pink); transform: translateY(-1px); }
+@media (max-width: 47.5rem) {
+  .hero-cols .hero-list:last-child { display: flex; }
+  .hero-cols .hero-list:last-child li:not(:last-child) { display: none; }
+  .hero-cols { flex-direction: column; gap: .1rem; align-items: flex-end; text-align: right; }
+}
