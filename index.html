@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pheemaphat Chantarusorn</title>
+<meta name="description" content="Pheemaphat (Phee) Chantarusorn: Information Studies and German Studies at Chulalongkorn University. Research and engineering on evidence-grounded language-model systems, knowledge graphs and data pipelines.">
+<meta name="author" content="Pheemaphat Chantarusorn">
+<meta property="og:title" content="Pheemaphat Chantarusorn">
+<meta property="og:description" content="Evidence-grounded language-model systems, knowledge graphs and data pipelines. Information Studies, Chulalongkorn University.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://pheechan.github.io/">
+<meta name="theme-color" content="#FAFBFC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#11151D" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@400;500&family=Schibsted+Grotesk:wght@400;500;600&family=Spectral:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Pheemaphat Chantarusorn",
+  "alternateName": ["Phee", "ภีมพัศ จันทรุสอน"],
+  "url": "https://pheechan.github.io/",
+  "affiliation": {"@type": "CollegeOrUniversity", "name": "Chulalongkorn University"},
+  "knowsLanguage": ["th", "en", "de"],
+  "sameAs": ["https://github.com/pheechan", "https://www.linkedin.com/in/pheemaphat-chantarusorn"]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="page">
+  <nav class="toc" aria-label="Sections">
+    <a class="monogram" href="#top" aria-label="Back to top">PC</a>
+    <ul>
+      <li><a href="#papers">Papers</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <!-- Intro -->
+    <header class="intro" id="top">
+      <div class="row">
+        <div class="text">
+          <h1 class="name">Pheemaphat Chantarusorn</h1>
+          <p class="name-th" lang="th">ภีมพัศ จันทรุสอน</p>
+          <p class="lede">I study how organisations keep and find what they know, and I build the software that does it: data pipelines, knowledge graphs and language-model systems <span class="hl hl-sweep">that cite their sources</span>.<button class="ref" type="button" aria-controls="n-lede" aria-expanded="false">1</button></p>
+          <p class="sub">Undergraduate in Information Studies and German Studies at Chulalongkorn University, Bangkok. Currently a data engineer intern at Kiatnakin Phatra Financial Group.</p>
+          <p class="actions">
+            <a class="btn" href="mailto:p.chantarusorn@gmail.com">Email me</a>
+            <a class="link" href="https://github.com/pheechan">GitHub</a>
+            <a class="link" href="https://www.linkedin.com/in/pheemaphat-chantarusorn">LinkedIn</a>
+          </p>
+        </div>
+        <aside class="note" id="n-lede">
+          <span class="note-n">1</span>
+          On a sample of 41 graduate papers, Papertrend gave right, specific and cited answers to 45 of 48 benchmark questions. About 65 numbers spot-checked in its answers all matched the papers.
+          <span class="note-src">Chantarusorn, Traipat &amp; Tachaiya, 2026</span>
+        </aside>
+      </div>
+      <div class="row">
+        <div class="text">
+          <p class="langs"><span lang="th">ไทย</span>, native. English, TOEIC 980. <span lang="de">Deutsch</span>, B2.</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Papers -->
+    <section id="papers" aria-labelledby="h-papers">
+      <h2 id="h-papers">Papers</h2>
+
+      <article class="paper">
+        <div class="row">
+          <div class="text">
+            <p class="paper-meta">2026, manuscript</p>
+            <h3 class="paper-title">Papertrend: An evidence-grounded platform for reading, charting, and questioning a research collection with large language models</h3>
+            <p class="authors"><span class="me">Pheemaphat Chantarusorn</span>, Thanawat Traipat, Jakapun Tachaiya</p>
+            <p class="summary">A web platform that reads a program's theses with a LangGraph pipeline, stores a sentence of evidence for every keyword it extracts, and reports a shift in the field only when it survives the removal of any single paper.</p>
+            <div class="paper-actions">
+              <button class="toggle" type="button" aria-expanded="false" aria-controls="abs-papertrend">Show abstract</button>
+              <button class="toggle copy" type="button" data-bib="bib-papertrend">Copy BibTeX</button>
+              <a class="link" href="https://papertrend-extractor-llm.vercel.app">Open the platform</a>
+            </div>
+            <div class="abstract" id="abs-papertrend" hidden>
+              <p>Graduate programs accumulate research faster than anyone can read it as a body. The English as an International Language (EIL) program at Chulalongkorn University records 182 master's theses and doctoral dissertations from 2006 to 2025, of which 101 survive as retrievable PDF files. An earlier study of that record ran a one-off chain of language-model agents in a notebook. This paper presents Papertrend, the web platform that grew out of it.</p>
+              <p>Papertrend reads each uploaded paper with a LangGraph pipeline that stores a sentence of evidence for every keyword it extracts and a quoted line for every publication year it assigns. It groups topics across papers by the consensus of three independent model groupings, and reports a shift in the field only when the shift survives the removal of any one paper. It answers questions over the collection with four-channel hybrid retrieval, whole-paper reading and passage-level citations, and it audits a draft whose support is in doubt. A table view extracts reader-defined fields from every paper and keeps a value only when its quotation, and any number in it, occurs in the paper.</p>
+              <p>On a 14-paper gold set that includes scanned and Thai papers, a pipeline revision raised correct publication years from 21% to 100% and keywords found verbatim in the text from 98% to 100%, at a median cost of US$0.0085 per paper. On a development sample of 41 uploaded EIL papers, 45 of 48 benchmark questions received right, specific and cited answers.</p>
+            </div>
+            <pre class="bib" id="bib-papertrend" hidden>@unpublished{chantarusorn2026papertrend,
+  author = {Chantarusorn, Pheemaphat and Traipat, Thanawat and Tachaiya, Jakapun},
+  title  = {Papertrend: An Evidence-Grounded Platform for Reading, Charting,
+            and Questioning a Research Collection with Large Language Models},
+  year   = {2026},
+  note   = {Manuscript, Chulalongkorn University}
+}</pre>
+          </div>
+          <aside class="note static">
+            Publication years correct on the gold set: <strong>21% to 100%</strong> after one pipeline revision.
+            <span class="note-src">Median cost US$0.0085 per paper</span>
+          </aside>
+        </div>
+      </article>
+
+      <article class="paper">
+        <div class="row">
+          <div class="text">
+            <p class="paper-meta">May 2026, analytical report</p>
+            <h3 class="paper-title">What truly defines an EIL program? An analytical report based on graduate research in English as an International Language</h3>
+            <p class="authors">Jakapun Tachaiya, Thanawat Traipat, <span class="me">Pheemaphat Chantarusorn</span>, S. Jitwiriyanont</p>
+            <p class="summary">A study of two decades of master's and doctoral research in Chulalongkorn's EIL program, asking which questions, methods and tracks the program's research actually pursues. Language-model agents classified the record; Papertrend grew out of this work.</p>
+            <div class="paper-actions">
+              <button class="toggle copy" type="button" data-bib="bib-eil">Copy BibTeX</button>
+            </div>
+            <pre class="bib" id="bib-eil" hidden>@unpublished{tachaiya2026eil,
+  author = {Tachaiya, Jakapun and Traipat, Thanawat and Chantarusorn, Pheemaphat
+            and Jitwiriyanont, S.},
+  title  = {What Truly Defines an {EIL} Program? An Analytical Report Based on
+            Graduate Research in English as an International Language ({EIL})},
+  year   = {2026},
+  month  = may,
+  note   = {Analytical report, Chulalongkorn University, Bangkok}
+}</pre>
+          </div>
+          <aside class="note static">
+            182 theses and dissertations recorded, 2006 to 2025.
+            <span class="note-src">101 retrievable as PDF</span>
+          </aside>
+        </div>
+      </article>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" aria-labelledby="h-exp">
+      <h2 id="h-exp">Experience</h2>
+
+      <article class="job">
+        <div class="row">
+          <div class="text">
+            <p class="when">Aug 2026 to present</p>
+            <h3>Data Engineer Intern, <span class="org">Kiatnakin Phatra Financial Group</span></h3>
+            <ul>
+              <li>Prototyped a multi-agent LangChain system that turns business requirements into ready-to-build data pipeline artifacts, now the basis for production development.</li>
+              <li>Built a customer privilege ingestion pipeline on Azure Data Factory and Databricks that delivers point earn and burn data for analysis and dashboards.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="job">
+        <div class="row">
+          <div class="text">
+            <p class="when">Jun 2026 to Aug 2026</p>
+            <h3>Digitalization and Automation Intern, <span class="org">Allianz Ayudhya General Insurance</span></h3>
+            <ul>
+              <li>Owned two Python automations for Motor Insurance Operations end to end, from requirements and UAT through deployment and support.</li>
+              <li>Automated eBiz CMI/VMI policy issuance with Playwright, filling 30 to 40 fields per policy across about 45 policies a day.</li>
+              <li>Wrote a workflow that decrypts LGIB PGP files and routes them by partner, product and transaction type, replacing 30 minutes of daily manual sorting.</li>
+            </ul>
+          </div>
+          <aside class="note static">
+            <strong>~118 hours a month</strong> saved, or 0.67 FTE. Policy issuance went from 5 to 7 minutes to about one.
+          </aside>
+        </div>
+      </article>
+
+      <article class="job">
+        <div class="row">
+          <div class="text">
+            <p class="when">Jun 2025 to Dec 2025</p>
+            <h3>Software Engineer, <span class="org">STelligence</span></h3>
+            <ul>
+              <li>Designed and deployed an internal Neo4j knowledge graph, with a chatbot on top for exploring the organisation's network.</li>
+              <li>Built an analytics pipeline and dashboard on Microsoft Fabric that turns more than ten raw sources into reporting-ready data with PySpark.</li>
+              <li>Taught more than 20 colleagues to deploy conversational agents with Azure AI Foundry, Copilot Studio and LangChain.</li>
+              <li>Ran scheduled ingestion with n8n and Python scrapers at 100% uptime.</li>
+            </ul>
+          </div>
+          <aside class="note static">
+            <strong>2,000+ relationships</strong> across 500+ entities in the knowledge graph.
+          </aside>
+        </div>
+      </article>
+
+      <article class="job">
+        <div class="row">
+          <div class="text">
+            <p class="when">Apr 2025 to May 2025</p>
+            <h3>OCR Quality Assurance Assistant, <span class="org">Office of Academic Resources, Chulalongkorn University</span></h3>
+            <ul>
+              <li>Ran quality assurance for the digitisation of rare volumes in Thai, English, French, Latin and Spanish.</li>
+              <li>Traced recurring OCR failures to their causes and wrote correction protocols that cut manual reconciliation by 20%.</li>
+              <li>Normalised metadata schemas so the archive can be searched across languages.</li>
+            </ul>
+          </div>
+          <aside class="note static">
+            <strong>400+ rare volumes</strong> held above 90% character accuracy.
+          </aside>
+        </div>
+      </article>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" aria-labelledby="h-proj">
+      <h2 id="h-proj">Selected projects</h2>
+
+      <article class="project">
+        <div class="row">
+          <div class="text">
+            <h3>Knowledge Continuity Service</h3>
+            <p class="when">2026, capstone project</p>
+            <p>A multi-agent question-answering prototype for organisational knowledge under knowledge governance. Enterprise PDFs and spreadsheets become versioned, owned and citable knowledge; domain agents answer in Thai with citations to the exact page, sheet or row, and decline when the evidence isn't there.</p>
+            <p class="stack">Python, FastAPI, multi-agent orchestration, React</p>
+          </div>
+          <aside class="note static">
+            Capstone for Information Studies, advised by Assoc. Prof. Dr. Songphan Choemprayong. A concept prototype, not a deployed product.
+          </aside>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="row">
+          <div class="text">
+            <h3>Neoem</h3>
+            <p class="when">Chula Legal Tech, Year 7</p>
+            <p>A B2C platform for OEM manufacturing that reads contracts with retrieval-augmented generation to flag risky clauses, and checks documents for fraud through iApp OCR and the Thanoy API behind FastAPI.</p>
+            <p class="stack">LangChain, pgvector, FastAPI, Next.js</p>
+          </div>
+          <aside class="note static">
+            <strong>First runner-up</strong> of the competition, and matched with KKP Bank.
+          </aside>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="row">
+          <div class="text">
+            <h3><a href="https://github.com/pheechan/neo4j-network-agent">Neo4j Network Intelligence Agent</a></h3>
+            <p class="when">2025</p>
+            <p>A bilingual Thai and English agent for questions about who connects to whom across people, positions, agencies and ministries. Common questions map to Cypher templates; anything else falls back to a language model.</p>
+            <p class="stack">LangGraph, Neo4j, Ollama, Docker</p>
+          </div>
+          <aside class="note static">
+            Template queries answer in about <strong>half a second</strong>.
+          </aside>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="row">
+          <div class="text">
+            <h3><a href="https://pheechan.github.io/aksorn-cat-hub/" lang="th">คลังความรู้แมวอักษร</a></h3>
+            <p class="when">2026, knowledge management course</p>
+            <p>A knowledge hub for the cats of the Faculty of Arts: each cat's history and care record, sorted guides, and a directory of who to ask. A shared Google Sheet serves as the content system, so the volunteer team edits it without touching code.</p>
+            <p class="stack">HTML, CSS, JavaScript, Three.js, Google Sheets</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Education -->
+    <section id="education" aria-labelledby="h-edu">
+      <h2 id="h-edu">Education</h2>
+      <div class="row">
+        <div class="text">
+          <dl class="edu">
+            <div>
+              <dt>Chulalongkorn University</dt>
+              <dd>B.A. in Information Studies and German Studies, 2023 to present. GPAX 3.21.</dd>
+            </div>
+            <div>
+              <dt>Bodindecha (Sing Singhaseni) School</dt>
+              <dd>Arts, German program, 2017 to 2023.</dd>
+            </div>
+          </dl>
+
+          <h3 class="skills-h">Tools I work with</h3>
+          <dl class="skills">
+            <div><dt>Languages</dt><dd>Python, SQL, Cypher, PySpark, JavaScript, PHP</dd></div>
+            <div><dt>Data and AI</dt><dd>ETL and ELT pipelines, data modelling, knowledge graphs, retrieval-augmented generation, vector search</dd></div>
+            <div><dt>Platforms</dt><dd>Microsoft Fabric, Azure Data Factory, Azure AI Foundry, Databricks, LangGraph, Prefect, n8n, Docker, Google Cloud</dd></div>
+            <div><dt>Databases</dt><dd>Neo4j, PostgreSQL, SQL Server, MongoDB</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact" aria-labelledby="h-contact">
+      <h2 id="h-contact">Contact</h2>
+      <div class="row">
+        <div class="text">
+          <p class="contact-line">For research collaboration, internships or questions about my work, write to <a href="mailto:p.chantarusorn@gmail.com">p.chantarusorn@gmail.com</a>.</p>
+          <p class="actions">
+            <a class="link" href="https://github.com/pheechan">GitHub</a>
+            <a class="link" href="https://www.linkedin.com/in/pheemaphat-chantarusorn">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <p>Last updated November 2026.</p>
+    </footer>
+  </main>
+</div>
+
+<div class="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
