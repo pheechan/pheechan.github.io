@@ -87,7 +87,7 @@
   <!-- ============ Statement ============ -->
   <section class="statement" aria-label="Research statement">
     <p class="fill">I study how organisations keep and find what they know, and I build the software that does it: data pipelines, knowledge graphs and language-model systems that cite their sources.</p>
-    <p class="statement-sub">Two papers on reading research collections with language models, four roles in data and automation, and a habit of checking every number against its source. <span>Thai, English and German.</span></p>
+    <p class="statement-sub">Three papers on reading research and organisational knowledge with language models, four roles in data and automation, and a habit of checking every number against its source. <span>Thai, English and German.</span></p>
   </section>
 
   <div class="wrap">
@@ -121,6 +121,33 @@
 }</pre>
           </div>
           <aside class="evidence"><b>45 of 48</b> benchmark questions answered correctly, specifically and with citations.</aside>
+        </article>
+
+        <article class="entry">
+          <div class="entry-main">
+            <p class="meta">2026, capstone report, in Thai</p>
+            <h3 class="paper-title">A multi-agent question-answering prototype for organizational knowledge under knowledge governance</h3>
+            <p class="title-th" lang="th">การพัฒนาต้นแบบระบบถาม-ตอบความรู้องค์กรด้วยเอเจนต์หลายตัวภายใต้กลไกธรรมาภิบาลความรู้</p>
+            <p class="authors"><span class="me">Pheemaphat Chantarusorn</span>. Advised by Assoc. Prof. Dr. Songphan Choemprayong</p>
+            <p>Asks what governance a system needs before its answers from an organisation's own documents can be trusted and traced. The prototype carries knowledge through six stages, from intake and human verification to cited answers, and logs every question it cannot answer as a knowledge gap that sets what to collect next.</p>
+            <div class="actions">
+              <button class="btn-line" type="button" aria-expanded="false" aria-controls="abs-capstone">Show summary</button>
+              <button class="btn-line copy" type="button" data-bib="bib-capstone">Copy BibTeX</button>
+            </div>
+            <div class="abstract" id="abs-capstone" hidden>
+              <p>Built during an internship at an insurance company, the prototype turned 19 of 22 permitted internal documents into 1,597 published knowledge items across six knowledge packs. Five experiments found no citation leaking from one pack into another and a citation accuracy of 1.000.</p>
+              <p>Classifying the intent of a question proved to be a governance mechanism rather than a convenience: it raised scope containment from 0.524 to 1.000 without lowering retrieval coverage. Because Thai is written without spaces, character n-gram retrieval almost always finds some match, so "no documents found" cannot signal that a question is out of scope. The report also separates an owner who is declared from an owner who has actually taken responsibility, applying the evidence-control principles of library science to an AI system.</p>
+            </div>
+            <pre class="bib" id="bib-capstone" hidden>@unpublished{chantarusorn2026governance,
+  author = {Chantarusorn, Pheemaphat},
+  title  = {A Multi-Agent Question-Answering Prototype for Organizational
+            Knowledge under Knowledge Governance},
+  year   = {2026},
+  note   = {Capstone report (in Thai), course 2206493, Department of Library
+            Science, Faculty of Arts, Chulalongkorn University}
+}</pre>
+          </div>
+          <aside class="evidence"><b>1,597</b> knowledge items published, with citation accuracy of 1.000.</aside>
         </article>
 
         <article class="entry">
@@ -233,7 +260,7 @@
             <p class="meta">2026, capstone project</p>
             <h3>Knowledge Continuity Service</h3>
             <p>A multi-agent question-answering prototype for organisational knowledge under knowledge governance. Enterprise PDFs and spreadsheets become versioned, owned and citable knowledge; domain agents answer in Thai with citations to the exact page, sheet or row, and decline when the evidence isn't there. A pixel-art office shows the agents at work.</p>
-            <p class="stack">Python, FastAPI, React. Advised by Assoc. Prof. Dr. Songphan Choemprayong. A concept prototype, not a deployed product.</p>
+            <p class="stack">Python, FastAPI, React. Advised by Assoc. Prof. Dr. Songphan Choemprayong. A concept prototype, not a deployed product. The report is listed under Papers.</p>
           </div>
         </article>
 

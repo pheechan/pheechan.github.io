@@ -7,7 +7,8 @@ document.querySelectorAll('[aria-controls^="abs-"]').forEach((btn) => {
     const open = btn.getAttribute('aria-expanded') === 'true';
     btn.setAttribute('aria-expanded', String(!open));
     panel.hidden = open;
-    btn.textContent = open ? 'Show abstract' : 'Hide abstract';
+    const word = btn.textContent.includes('summary') ? 'summary' : 'abstract';
+    btn.textContent = (open ? 'Show ' : 'Hide ') + word;
   });
 });
 

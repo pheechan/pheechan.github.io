@@ -181,6 +181,7 @@ h3 a { text-decoration: none; background: linear-gradient(var(--ink), var(--ink)
 h3 a:hover { background-size: 100% 2px; }
 .paper-title { font-size: clamp(1.375rem, 2vw, 1.625rem); line-height: 1.2; }
 .authors { color: var(--muted); }
+.title-th { margin-top: .35rem !important; font-size: 1rem; color: var(--muted); }
 .me { color: var(--ink); font-weight: 600; background: linear-gradient(var(--pink-soft), var(--pink-soft)) no-repeat 0 85% / 100% .5em; }
 .org { margin-top: .2rem !important; font: 400 1.0625rem/1.4 var(--display); color: var(--muted); }
 .entry ul { margin: .9rem 0 0; padding-left: 1.1rem; max-width: 40rem; }
