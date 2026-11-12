@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Archivo, Helvetica, Arial, sans-serif">
+  <rect width="960" height="600" fill="#1C1C1C"/>
+  <g stroke="#5A5A55" stroke-width="2" fill="none">
+    <path d="M180 150 L360 260"/><path d="M180 330 L360 260"/><path d="M180 470 L360 420"/>
+    <path d="M360 260 L560 220"/><path d="M360 420 L560 380"/><path d="M360 260 L560 380"/>
+    <path d="M560 220 L780 300"/><path d="M560 380 L780 300"/><path d="M560 380 L760 480"/>
+    <path d="M180 150 L180 330" stroke-dasharray="6 8"/>
+  </g>
+  <g fill="#EFEEE9">
+    <circle cx="180" cy="150" r="22"/><circle cx="180" cy="330" r="22"/><circle cx="180" cy="470" r="22"/>
+  </g>
+  <g fill="none" stroke="#EFEEE9" stroke-width="3">
+    <circle cx="360" cy="260" r="20"/><circle cx="360" cy="420" r="20"/>
+  </g>
+  <g fill="#F7D3E1"><rect x="540" y="200" width="40" height="40" rx="4"/><rect x="540" y="360" width="40" height="40" rx="4"/><rect x="740" y="460" width="40" height="40" rx="4"/></g>
+  <circle cx="780" cy="300" r="34" fill="#B8336A"/>
+  <g fill="#A6A49C" font-size="20" font-weight="500">
+    <text x="146" y="110">Person</text><text x="318" y="222">Position</text>
+    <text x="528" y="180">Agency</text><text x="736" y="248">Ministry</text>
+  </g>
+  <g transform="translate(560 64)">
+    <rect width="340" height="56" rx="28" fill="#EFEEE9"/>
+    <text x="26" y="36" font-size="21" fill="#1C1C1C" font-family="'Noto Sans Thai', sans-serif">“OSK115 มีใครบ้าง”</text>
+  </g>
+</svg>
